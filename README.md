@@ -1,7 +1,18 @@
 # Ember-repositories-prototype
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+OSF Repositories
+
+This is just a sample starter app for prototyping OSF Repositories, an upcoming feature in the
+Open Science Framework (https://osf.io).
+
+On the OSF, you can organize your research and related materials into projects.
+OSF Repositories will allow projects to be grouped by specific topics for easy discovery. 
+For example, there could be a repository for breast cancer research, and every project in that 
+repository would relate to this topic.  Users could submit their project to a repository, 
+and search within and across repositories.
+
+This feature is still in the planning stages. This starter app includes our OSF navbar/footer and
+OSF styles.
 
 ## Prerequisites
 
@@ -39,9 +50,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
