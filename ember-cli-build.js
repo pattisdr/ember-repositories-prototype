@@ -1,10 +1,24 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var path = require('path');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
+    'ember-bootstrap': {
+            importBootstrapCSS: false
+    },
+
+
+    sassOptions: {
+            includePaths: [
+                'node_modules/ember-osf/addon/styles',
+                'bower_components/bootstrap-sass/assets/stylesheets',
+                'bower_components/osf-style/sass',
+            ]
+    },
+
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -19,6 +33,16 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+
+   // osf-style
+    app.import(path.join(app.bowerDirectory, 'osf-style/page.css'));
+    app.import(path.join(app.bowerDirectory, 'osf-style/css/base.css'));
+    app.import(path.join(app.bowerDirectory, 'loaders.css/loaders.min.css'));
+
+    app.import(path.join(app.bowerDirectory, 'osf-style/img/cos-white2.png'), {
+        destDir: 'img'
+    });
+
 
   return app.toTree();
 };
