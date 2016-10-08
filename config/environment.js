@@ -1,11 +1,14 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+  var authorizationType = 'cookie';
+
   var ENV = {
     modulePrefix: 'ember-repositories-prototype',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    authorizationType: authorizationType,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
