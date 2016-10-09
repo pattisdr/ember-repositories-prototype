@@ -7,9 +7,7 @@ Open Science Framework (https://osf.io).
 
 On the OSF, you can organize your research and related materials into projects.
 OSF Repositories will allow projects to be grouped by specific topics for easy discovery. 
-For example, there could be a repository for breast cancer research, and every project in that 
-repository would relate to this topic.  Users could submit their project to a repository, 
-and search within and across repositories.
+Users could submit their project to a repository, and search within and across repositories.
 
 This feature is still in the planning stages. This starter app includes our OSF navbar/footer and
 OSF styles.
