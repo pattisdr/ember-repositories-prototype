@@ -2,7 +2,7 @@
 
 OSF Repositories
 
-This is just a sample starter app for prototyping OSF Repositories, an upcoming feature in the
+This is a sample starter app for prototyping OSF Repositories, an upcoming feature in the
 Open Science Framework (https://osf.io).
 
 On the OSF, you can organize your research and related materials into projects.
@@ -10,7 +10,8 @@ OSF Repositories will allow projects to be grouped by specific topics for easy d
 Users could submit their project to a repository, and search within and across repositories.
 
 This feature is still in the planning stages. This starter app includes our OSF navbar/footer and
-OSF styles.
+OSF styles.  There is also an example Discover Repositories route with hardcoded repository
+and projects.
 
 ## Prerequisites
 
