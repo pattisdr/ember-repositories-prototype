@@ -1,0 +1,20 @@
+<div class="col-xs-12">
+    <h1> Discover Repositories - Example Only </h1>
+    <p>
+        This is an example of how to print data into your template.  Feel free
+        to change this!
+    </p>
+    {{#each model as |repository|}}
+       <p> <b> Repository Title - {{repository.title}} </b> </p>
+        {{#each repository.projects as |project|}}
+          <ul>
+              <li>{{project.title}} - {{project.description}}</li>
+              <li> Tags:
+                {{#each project.tags as |tag|}}
+                  {{tag}},
+                {{/each}}
+              </li>
+          </ul>
+        {{/each}}
+    {{/each}}
+</div>
