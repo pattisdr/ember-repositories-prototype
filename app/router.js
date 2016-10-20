@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('discover');
+  this.route('repositories');
 });
 
 export default Router;
