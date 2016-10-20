@@ -1,23 +1,10 @@
 <div class="row">
-    <div class="col-xs-12">
-        <h1> Discover Repositories - Example Only </h1>
-        <p>{{#link-to "index"}} Repositories Home{{/link-to}}</p>
-        <p>
-            This is an example of how to iterate over a list of items using the each helper.
-            These fake repositories were hardcoded in the repositories route.
-        </p>
-        {{#each model as |repository|}}
-           <p> <b> Repository Title - {{repository.title}} </b> </p>
-            {{#each repository.projects as |project|}}
-              <ul>
-                  <li>{{project.title}} - {{project.description}}</li>
-                  <li> Tags:
-                    {{#each project.tags as |tag|}}
-                      {{tag}},
-                    {{/each}}
-                  </li>
-              </ul>
-            {{/each}}
-        {{/each}}
-    </div>
+  <div class="col-xs-12 p-t-xl text-center">
+      <div class="osf-logo"></div>
+    <h1> Upcoming Feature: OSF Repositories </h1>
+    <h2> Your code here! </h2>
+
+    <h3>{{#link-to "discover"}} Discover repositories{{/link-to}}</h3>
+
+  </div>
 </div>

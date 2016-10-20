@@ -8,6 +8,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('repositories');
+  this.route('discover', { path: '/repositories/discover'});
+  this.route('repository', { path: '/repositories/:repository_id'});
 });
 
 export default Router;
