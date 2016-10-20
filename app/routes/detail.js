@@ -33,8 +33,16 @@ let repositories = [{
   topic: 'economics'
 }];
 
+
 export default Ember.Route.extend({
-   model() {
-    return repositories;
+   model(params) {
+       var id = params.repository_id;
+       var foundRepository = null;
+       repositories.forEach((repository) => {
+           if (repository.id === id) {
+               foundRepository = repository;
+           };
+       });
+       return foundRepository;
   }
 });

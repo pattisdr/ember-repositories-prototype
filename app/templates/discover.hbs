@@ -3,21 +3,12 @@
         <h1> Discover Repositories - Example Only </h1>
         <p>{{#link-to "repositories"}} Repositories Home{{/link-to}}</p>
         <p>
-            This is an example of how to iterate over a list of items using the each helper.
-            These fake repositories were hardcoded in the repositories route.
+            A list of all repositories:
         </p>
-        {{#each model as |repository|}}
-           <p> <b> Repository Title - {{repository.title}} </b> </p>
-            {{#each repository.projects as |project|}}
-              <ul>
-                  <li>{{project.title}} - {{project.description}}</li>
-                  <li> Tags:
-                    {{#each project.tags as |tag|}}
-                      {{tag}},
-                    {{/each}}
-                  </li>
-              </ul>
+        <ul>
+            {{#each model as |repository|}}
+                <li> {{#link-to 'detail' repository.id}}  <p> <b>{{repository.title}} </b> </p> {{/link-to}} </li>
             {{/each}}
-        {{/each}}
+        </ul>
     </div>
 </div>
