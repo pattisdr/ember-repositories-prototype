@@ -41,7 +41,7 @@ export default Ember.Route.extend({
        repositories.forEach((repository) => {
            if (repository.id === id) {
                foundRepository = repository;
-           };
+           }
        });
        return foundRepository;
   }
